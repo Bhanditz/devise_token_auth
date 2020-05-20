@@ -30,7 +30,7 @@ group :development, :test do
   gem 'guard-minitest'
   gem 'minitest'
   gem 'minitest-focus'
-  gem 'minitest-rails'
+  gem 'minitest-rails', '>= 3.0.0'
   gem 'minitest-reporters'
   gem 'mocha'
   gem 'pry'
@@ -40,9 +40,9 @@ end
 # code coverage, metrics
 group :test do
   gem 'codeclimate-test-reporter', require: nil
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.2'
 end
 
 group :development do
-  gem 'github_changelog_generator'
+  gem 'github_changelog_generator', '>= 1.14.3'
 end
