@@ -19,7 +19,7 @@ group :development, :test do
   gem 'omniauth-facebook', git: 'https://github.com/mkdynamic/omniauth-facebook'
   gem 'omniauth-github',        git: 'https://github.com/intridea/omniauth-github'
   gem 'omniauth-google-oauth2', git: 'https://github.com/zquestz/omniauth-google-oauth2'
-  gem 'rack-cors', require: 'rack/cors'
+  gem 'rack-cors', '>= 1.0.5', require: 'rack/cors'
   gem 'thor'
 
   # testing
@@ -30,7 +30,7 @@ group :development, :test do
   gem 'guard-minitest'
   gem 'minitest'
   gem 'minitest-focus'
-  gem 'minitest-rails'
+  gem 'minitest-rails', '>= 6.1.0'
   gem 'minitest-reporters'
   gem 'mocha'
   gem 'pry'
@@ -40,7 +40,7 @@ end
 # code coverage, metrics
 group :test do
   gem 'codeclimate-test-reporter', require: nil
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
