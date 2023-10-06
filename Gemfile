@@ -40,7 +40,7 @@ end
 # code coverage, metrics
 group :test do
   gem 'codeclimate-test-reporter', require: nil
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
