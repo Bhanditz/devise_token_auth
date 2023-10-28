@@ -30,7 +30,7 @@ group :development, :test do
   gem 'guard-minitest'
   gem 'minitest'
   gem 'minitest-focus'
-  gem 'minitest-rails'
+  gem 'minitest-rails', '>= 7.1.0'
   gem 'minitest-reporters'
   gem 'mocha'
   gem 'pry'
