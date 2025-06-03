@@ -26,11 +26,11 @@ group :development, :test do
   # gem 'spring'
   gem 'faker'
   gem 'fuzz_ball'
-  gem 'guard'
+  gem 'guard', '>= 2.14.2'
   gem 'guard-minitest'
   gem 'minitest'
   gem 'minitest-focus'
-  gem 'minitest-rails'
+  gem 'minitest-rails', '>= 7.1.0'
   gem 'minitest-reporters'
   gem 'mocha'
   gem 'pry'
@@ -39,10 +39,10 @@ end
 
 # code coverage, metrics
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
-  gem 'rails-controller-testing'
+  gem 'codeclimate-test-reporter', '>= 1.0.9', require: nil
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
-  gem 'github_changelog_generator'
+  gem 'github_changelog_generator', '>= 1.15.0'
 end
